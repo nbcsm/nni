@@ -28,7 +28,7 @@ model = pruner.compress()
 
 ## 导出压缩结果
 
-训练完成后，可获得剪枝后模型的精度。 可将模型权重到处到文件，同时将生成的掩码也导出到文件。 也支持导出 ONNX 模型。
+训练完成后，可获得剪枝后模型的精度。 可将模型权重导出到文件，同时将生成的掩码也导出到文件。 也支持导出 ONNX 模型。
 
 ```python
 pruner.export_model(model_path='pruned_vgg19_cifar10.pth', mask_path='mask_vgg19_cifar10.pth')
